@@ -1,0 +1,29 @@
+{
+  "name": "@ticatec/mysql-common-library",
+  "version": "2.0.1",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "publish:public": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ticatec/node-library.git"
+  },
+  "author": "Henry Feng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ticatec/node-library/issues"
+  },
+  "homepage": "https://github.com/ticatec/node-library/tree/main/ticatec-mysql-common-library",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "bluebird": "^3.7.2",
+    "log4js": "^6.7.0",
+    "mysql2": "3.9.8",
+    "@ticatec/node-common-library": "^2.1.1"
+  }
+}

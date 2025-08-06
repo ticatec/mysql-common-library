@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ticatec/node-library.git"
+    "url": "https://github.com/ticatec/mysql-common-library"
   },
   "author": "Henry Feng",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ticatec/node-library/issues"
+    "url": "https://github.com/ticatec/mysql-common-library/issues"
   },
-  "homepage": "https://github.com/ticatec/node-library/tree/main/ticatec-mysql-common-library",
+  "homepage": "https://github.com/ticatec/mysql-common-library",
   "dependencies": {
   },
   "devDependencies": {
@@ -24,6 +24,6 @@
     "bluebird": "^3.7.2",
     "log4js": "^6.7.0",
     "mysql2": "3.9.8",
-    "@ticatec/node-common-library": "^2.1.1"
+    "@ticatec/node-common-library": "^2.2.0"
   }
 }

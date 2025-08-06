@@ -192,14 +192,6 @@ try {
 
 3. **Result Structure**: The `getRowSet` and `getFirstRow` methods make assumptions about result structure that may not always match the actual mysql2 response format.
 
-## Migration from v1.x
-
-If upgrading from version 1.x, note the following breaking changes:
-
-- Constructor parameters have changed
-- Some method signatures have been updated for better type safety
-- Error handling has been improved
-
 ## Contributing
 
 1. Fork the repository

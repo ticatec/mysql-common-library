@@ -1,29 +1,60 @@
 {
   "name": "@ticatec/mysql-common-library",
-  "version": "2.0.1",
+  "version": "2.1.0",
+  "description": "MySQL database connection implementation for @ticatec/node-common-library framework with connection pooling and transaction support",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*",
+    "README.md",
+    "README_CN.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
-    "publish:public": "npm publish --access public"
+    "clean": "rm -rf lib",
+    "prepublish": "npm run clean && npm run build",
+    "publish:public": "npm publish --access public",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "mysql",
+    "database",
+    "connection",
+    "pool",
+    "typescript",
+    "async",
+    "transaction",
+    "ticatec",
+    "node",
+    "sql"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ticatec/mysql-common-library"
+    "url": "git+https://github.com/ticatec/mysql-common-library.git"
   },
-  "author": "Henry Feng",
+  "author": {
+    "name": "Henry Feng",
+    "email": "huili.f@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ticatec/mysql-common-library/issues"
   },
-  "homepage": "https://github.com/ticatec/mysql-common-library",
-  "dependencies": {
+  "homepage": "https://github.com/ticatec/mysql-common-library#readme",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
   },
+  "peerDependencies": {
+    "@ticatec/node-common-library": "^2.2.0",
+    "mysql2": "^3.9.0"
+  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^18.11.9",
-    "bluebird": "^3.7.2",
-    "log4js": "^6.7.0",
-    "mysql2": "3.9.8",
-    "@ticatec/node-common-library": "^2.2.0"
+    "typescript": "^5.0.0",
+    "@ticatec/node-common-library": "^2.2.0",
+    "mysql2": "^3.9.8"
   }
 }

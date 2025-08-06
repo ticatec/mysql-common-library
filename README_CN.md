@@ -192,14 +192,6 @@ try {
 
 3. **结果结构**: `getRowSet` 和 `getFirstRow` 方法对结果结构的假设可能并不总是与实际的 mysql2 响应格式匹配。
 
-## 从 v1.x 迁移
-
-如果从 1.x 版本升级，请注意以下重大变更：
-
-- 构造函数参数已更改
-- 某些方法签名已更新以提供更好的类型安全性
-- 错误处理已改进
-
 ## 贡献
 
 1. Fork 这个仓库
@@ -223,18 +215,6 @@ try {
 - [@ticatec/node-common-library](https://www.npmjs.com/package/@ticatec/node-common-library) - 核心框架库
 - [mysql2](https://www.npmjs.com/package/mysql2) - Node.js 的 MySQL 客户端
 
-## 更新日志
-
-### v2.0.1
-- 添加了完整的 JSDoc 文档
-- 改进了类型定义
-- 修复了已知问题
-
-### v2.0.0
-- 重大重构，改进了接口设计
-- 添加了完整的 TypeScript 支持
-- 优化了连接池管理
-
 ## 开发指南
 
 ### 本地开发
@@ -251,12 +231,6 @@ npm install
 npm run build
 ```
 
-### 测试
-
-```bash
-# 运行测试（如果有）
-npm test
-```
 
 ### 发布
 
